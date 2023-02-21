@@ -37,14 +37,14 @@ class BotClient(discord.Client):
 # and associate it with the 'connect' method of the CommandsUtil class
 @tree.command(name='connect', description='Please connect your Vechain Wallet')
 async def connect(interaction: discord.Interaction):
-    await commands.connect(interaction)
+    await commands.connect(interaction=interaction)
 
 
 # Define a new command named 'disconnect' with a description
 # and associate it with the 'disconnect' method of the CommandsUtil class
 @tree.command(name='disconnect', description='Disconnect from current wallet')
 async def disconnect(interaction: discord.Interaction):
-    await commands.disconnect(interaction)
+    await commands.disconnect(interaction=interaction)
 
 
 # Define a new command named 'whoami' with a description
